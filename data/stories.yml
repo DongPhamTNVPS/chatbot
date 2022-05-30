@@ -1,0 +1,60 @@
+version: "3.1"
+
+stories:
+
+- story: A 1
+  steps:
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: thông tin về khoa
+  - action: utter_thong_tin_ve_khoa
+  - intent: khoa công nghệ thông tin
+  - action: utter_khoa_CNTT
+  - action: utter_khoa_CNTT2
+
+
+
+- story: A 3
+  steps:
+  - intent: có
+  - action: utter_khoa_CNTT
+  - action: utter_khoa_CNTT2
+  - intent: không
+  - action: utter_tam_biet
+
+
+- story: A 2
+  steps:
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: thông tin về khoa
+  - action: utter_thong_tin_ve_khoa
+  - intent: khoa công nghệ thông tin
+  - action: utter_khoa_CNTT
+  - action: utter_khoa_CNTT2
+  - intent: đội ngũ giảng viên
+  - action: utter_doi_ngu_giang_vien 
+  - intent: sdt
+  - action: utter_sdt
+  - action: utter_them_thong_tin
+
+- story: A 4
+  steps:
+  - intent: đội ngũ giảng viên
+  - action: utter_doi_ngu_giang_vien 
+
+- story: A 5
+  steps:
+  - intent: email
+  - action: utter_email
+  - action: utter_them_thong_tin
+
+- story: A 6
+  steps:
+  - intent: Thời gian đạo tạo đại học
+  - action: utter_thoi_gian_DH
+
+- story: A 7
+  steps:
+  - intent: Đánh giá kết quả học tập
+  - action: utter_danh_gia_hoc_tap
